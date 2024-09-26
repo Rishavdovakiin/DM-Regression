@@ -9,7 +9,7 @@ import pandas as pd
 from io import StringIO
 
 # Set the FastAPI backend URL
-API_URL = "http://127.0.0.1:8000"  # Update this if running on a different host/port
+API_URL = "https://dark-matter-halo-concentration.onrender.com/"  # Update this if running on a different host/port
 
 # Add custom CSS to set a galaxy background image (you can replace the URL with your own image)
 page_bg_img = '''
