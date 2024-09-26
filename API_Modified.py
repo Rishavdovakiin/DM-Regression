@@ -47,8 +47,8 @@ class DataFrameSelector(BaseEstimator, TransformerMixin):
         return X[self.attribute_names]
 
 # Paths to the model pipeline and the model (can be any model)
-pipeline_path = r'F:\DM\Pipeline\full_pipeline_dill.pkl'  # Update path
-model_path = r'F:\DM\Model\best_xgb_model_dill.pkl'  # This can be any model (XGBoost, CatBoost, etc.)
+pipeline_path = 'Pipeline/full_pipeline_dill.pkl'  # Update path
+model_path = 'Model/best_xgb_model_dill.pkl'  # This can be any model (XGBoost, CatBoost, etc.)
 #model_path = r'F:\DM\Model\best_cat_model.pkl'
 #model_path = r'F:\DM\Model\best_linreg_model_dill.pkl'
 
