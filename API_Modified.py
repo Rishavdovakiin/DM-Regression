@@ -27,7 +27,7 @@ app = FastAPI()
 # Enable CORS (if needed)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Update this with your frontend domains if needed
+    allow_origins=["https://dark-matter-concentration-prediction.streamlit.app/"],  # Update this with your frontend domains if needed
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
