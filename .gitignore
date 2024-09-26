@@ -1,0 +1,28 @@
+/.venv
+/__pycache__
+/.devcontainer
+/*pkl
+/API_New.py 
+/API_Test.py 
+/*csv
+/*txt
+/Rishav_Test_Notebook.py
+/*list
+/*png
+/Test_1.py
+/test_2.py
+/New_test.py
+/Gayatri_Test.py
+/Histogram.py
+/Create_Pipeline.py
+/data_frame_selector.py
+/New_test copy.py
+/Modified_Test.py
+/import numpy as np.py
+/Pro.ipynb
+/pipeline.py
+/Pipeline/full_pipeline_o_dill.pkl
+/Model/best_cat_model.pkl
+/Model/best_xgb_model_new.pkl
+/Model/best_xgb_model.pkl
+/Model/best_linreg_model_dill.pkl
