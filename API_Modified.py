@@ -146,11 +146,19 @@ async def predict(file: UploadFile = File(...)):
         raise HTTPException(status_code=500, detail=f"Error imputing missing values: {e}")
 
     # Step 4: Preprocess the test data using the pipeline
+    #try:
+    #    test_data_prepared = full_pipeline.transform(test_data_imputed)
+        
+    #except Exception as e:
+    #    raise HTTPException(status_code=500, detail=f"Error during data preprocessing: {e}")
+
     try:
         test_data_prepared = full_pipeline.transform(test_data_imputed)
-        
     except Exception as e:
+        print(type(full_pipeline))  # Check the type of the object
         raise HTTPException(status_code=500, detail=f"Error during data preprocessing: {e}")
+
+
 
     # Step 5: Make predictions using the model asynchronously
     try:
