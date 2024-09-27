@@ -42,7 +42,6 @@ pydantic_core==2.23.4
 pydeck==0.9.1
 Pygments==2.18.0
 pyparsing==3.1.4
-python==3.10.0
 python-dateutil==2.9.0.post0
 python-multipart==0.0.9
 pytz==2024.2
