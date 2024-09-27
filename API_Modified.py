@@ -61,25 +61,47 @@ class DataFrameSelector(BaseEstimator, TransformerMixin):
 
 
 # Paths to the model pipeline and the model (can be any model)
-pipeline_path = 'Pipeline/full_pipeline_dill.pkl'  # Update path
-model_path = 'Model/best_xgb_model_dill.pkl'  # This can be any model (XGBoost, CatBoost, etc.)
+#pipeline_path = 'Pipeline/full_pipeline_dill.pkl'  # Update path
+#model_path = 'Model/best_xgb_model_dill.pkl'  # This can be any model (XGBoost, CatBoost, etc.)
+pipeline_path = 'Pipeline/full_pipeline_cloud.pkl'  # Update path
+model_path = 'Model/best_xgb_model_cloud.pkl'  # This can be any model (XGBoost, CatBoost, etc.)
 #model_path = r'F:\DM\Model\best_cat_model.pkl'
 #model_path = r'F:\DM\Model\best_linreg_model_dill.pkl'
 
 # Load the preprocessing pipeline and model at startup
-try:
+#try:
     # Load the pipeline using dill
-    with open(pipeline_path, 'rb') as f:
-        full_pipeline = dill.load(f)
-    print("Pipeline loaded successfully")
+ #   with open(pipeline_path, 'rb') as f:
+ #       full_pipeline = dill.load(f)
+ #   print("Pipeline loaded successfully")
 
     # Load the model using dill (generic)
+ #   with open(model_path, 'rb') as f:
+ #       model = dill.load(f)
+ #   print("Model loaded successfully")
+    
+#except Exception as e:
+ #   raise RuntimeError(f"Error loading models: {e}")
+
+
+import cloudpickle
+
+try:
+    # Load the pipeline using cloudpickle
+    with open(pipeline_path, 'rb') as f:
+        full_pipeline = cloudpickle.load(f)
+    print("Pipeline loaded successfully")
+
+    # Load the model using cloudpickle (generic)
     with open(model_path, 'rb') as f:
-        model = dill.load(f)
+        model = cloudpickle.load(f)
     print("Model loaded successfully")
     
 except Exception as e:
     raise RuntimeError(f"Error loading models: {e}")
+
+
+
 
 # Expected columns in the dataset
 expected_columns = [
