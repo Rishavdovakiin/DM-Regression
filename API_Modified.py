@@ -34,17 +34,17 @@ app.add_middleware(
 )
 
 # Define the DataFrameSelector class for selecting columns
-from sklearn.base import BaseEstimator, TransformerMixin
+#from sklearn.base import BaseEstimator, TransformerMixin
 
-class DataFrameSelector(BaseEstimator, TransformerMixin):
-    def __init__(self, attribute_names):
-        self.attribute_names = attribute_names
+#class DataFrameSelector(BaseEstimator, TransformerMixin):
+#    def __init__(self, attribute_names):
+#        self.attribute_names = attribute_names
     
-    def fit(self, X, y=None):
-        return self
+#    def fit(self, X, y=None):
+#        return self
     
-    def transform(self, X):
-        return X[self.attribute_names]
+#    def transform(self, X):
+#        return X[self.attribute_names]
 
 # Paths to the model pipeline and the model (can be any model)
 pipeline_path = 'Pipeline/full_pipeline_dill.pkl'  # Update path
