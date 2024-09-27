@@ -262,3 +262,14 @@ async def download_plot():
     if os.path.exists(plot_path):
         return FileResponse(plot_path, media_type="image/png", filename="predictions_plot.png")
     raise HTTPException(status_code=404, detail="Plot file not found")
+
+import os
+
+app = FastAPI()
+
+# Get the port from the environment variable or default to 8000
+port = int(os.getenv("PORT", 8000))
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=port)
