@@ -34,7 +34,7 @@ app.add_middleware(
 )
 
 # Define the DataFrameSelector class for selecting columns
-#from sklearn.base import BaseEstimator, TransformerMixin
+from sklearn.base import BaseEstimator, TransformerMixin
 
 #class DataFrameSelector(BaseEstimator, TransformerMixin):
 #    def __init__(self, attribute_names):
@@ -45,6 +45,20 @@ app.add_middleware(
     
 #    def transform(self, X):
 #        return X[self.attribute_names]
+
+class DataFrameSelector(BaseEstimator, TransformerMixin):
+    def __init__(self, attribute_names):
+        self.attribute_names = attribute_names
+    
+    def fit(self, X, y=None):
+        return self
+    
+    def transform(self, X):
+        missing_columns = [col for col in self.attribute_names if col not in X.columns]
+        if missing_columns:
+            raise ValueError(f"Missing columns: {missing_columns}")
+        return X[self.attribute_names]
+
 
 # Paths to the model pipeline and the model (can be any model)
 pipeline_path = 'Pipeline/full_pipeline_dill.pkl'  # Update path
