@@ -27,7 +27,7 @@ pip install fastapi uvicorn pandas numpy scikit-learn matplotlib pydantic dill
 - Preprocessing pipeline (`full_pipeline_dill.pkl`)
 - Pre-trained machine learning model (e.g., `best_xgb_model_dill.pkl`)
 
-Make sure to update the paths to these files in the `pipeline_path` and `model_path` variables in `fastapi_app.py`.
+Make sure to update the paths to these files in the `pipeline_path` and `model_path` variables in `API_Modified.py`.
 
 ### Running the FastAPI App:
 1. Clone or copy this project to your local machine.
@@ -75,7 +75,7 @@ curl -X POST "http://127.0.0.1:8000/predict/" -F "file=@path_to_your_test_data.c
 - **Response**: Returns a PNG image file of the plot (if available).
 
 ### Folder Structure
-- `fastapi_app.py`: Main FastAPI application code.
+- `API_Modified.py`: Main FastAPI application code.
 - `ModelOutputs/`: A folder where the app will save the prediction CSV and plot files.\
   - The files will be stored on the desktop under `ModelOutputs`.
 
