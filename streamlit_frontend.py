@@ -16,7 +16,7 @@ API_URL = "https://dark-matter-halo-concentration.onrender.com/"  # Update this 
 page_bg_img = '''
 <style>
 .stApp {
-    background-image: url("https://www.wallpaperflare.com/galaxy-illustration-dark-matter-one-person-black-background-wallpaper-scym");
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/713/247/702/dark-matter-wallpaper-preview.jpg");
     background-size: cover;
     background-position: center;
 }
