@@ -16,7 +16,7 @@ API_URL = "https://dark-matter-halo-concentration.onrender.com/"  # Update this 
 page_bg_img = '''
 <style>
 .stApp {
-    background-image: url("https://e0.pxfuel.com/wallpapers/46/975/desktop-wallpaper-eagle-nebula-galaxies-nebula-universe-clouds-space-sky-cosmos-stars.jpg");
+    background-image: url("https://e0.pxfuel.com/wallpapers/764/523/desktop-wallpaper-black-space-dark-space-pc.jpg");
     background-size: cover;
     background-position: center;
 }
