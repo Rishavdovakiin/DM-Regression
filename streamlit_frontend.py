@@ -16,7 +16,7 @@ API_URL = "https://dark-matter-halo-concentration.onrender.com/"  # Update this 
 page_bg_img = '''
 <style>
 .stApp {
-    background-image: url("https://wallpapercave.com/wp/wp7044765.jpg");
+    background-image: url("https://e1.pxfuel.com/desktop-wallpaper/181/624/desktop-wallpaper-nebula-teal-turquoise-space-space.jpg");
     background-size: cover;
     background-position: center;
 }
