@@ -16,7 +16,7 @@ API_URL = "https://dark-matter-halo-concentration.onrender.com/"  # Update this 
 page_bg_img = '''
 <style>
 .stApp {
-    background-image: url("/img.webp");
+    background-image: url("img.webp");
     background-size: cover;
     background-position: center;
 }
