@@ -2,6 +2,7 @@
 # Author: Rishav Bhattacharjee
 # Date: 9th September, 2024
 # Streamlit frontend for interacting with the FastAPI model prediction API.
+#https://c4.wallpaperflare.com/wallpaper/681/554/339/abstract-planet-space-purple-wallpaper-preview.jpg
 
 import streamlit as st
 import requests
@@ -15,7 +16,7 @@ API_URL = "https://dark-matter-halo-concentration.onrender.com/"  # Update this 
 page_bg_img = '''
 <style>
 .stApp {
-    background-image: url("https://c4.wallpaperflare.com/wallpaper/681/554/339/abstract-planet-space-purple-wallpaper-preview.jpg");
+    background-image: url("https://www.wallpaperflare.com/galaxy-illustration-dark-matter-one-person-black-background-wallpaper-scym");
     background-size: cover;
     background-position: center;
 }
