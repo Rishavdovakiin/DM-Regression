@@ -32,7 +32,7 @@ Simply upload a CSV file containing the relevant data, and the model will proces
 You can also download a sample dataset to try it out.
 """)
 
-st.markdown("[Download Sample Data](/hlist_0.13835.csv)", unsafe_allow_html=True)
+st.markdown("[Download Sample Data](hlist_0.13835.csv)", unsafe_allow_html=True)
 
 st.write("Upload your CSV file to make predictions and visualize results.")
 
