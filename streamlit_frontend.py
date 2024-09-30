@@ -16,7 +16,7 @@ API_URL = "https://dark-matter-halo-concentration.onrender.com/"  # Update this 
 page_bg_img = '''
 <style>
 .stApp {
-    background-image: url("https://files.oaiusercontent.com/file-fmR8oGD1sZeLmYHH77960gMz?se=2024-09-30T20%3A04%3A56Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D89c9ee56-6895-4ec4-862d-177c0017d589.webp&sig=MfC5S4swq65uF039bFI2dE/Hp9pYyDSQAzsF8w1Hf1s%3D");
+    background-image: url("https://drive.google.com/file/d/1D4HrXsZROPMeyVq-42gQWQEf2XQUDx-4/view?usp=sharing");
     background-size: cover;
     background-position: center;
 }
