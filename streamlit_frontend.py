@@ -25,6 +25,14 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # Title of the app
 st.title("Dark Matter Halo Concentration Prediction")
+st.write("""
+This app allows you to predict dark matter halo concentrations using advanced machine learning models. 
+Simply upload a CSV file containing the relevant data, and the model will process it to generate predictions. 
+You can also download a sample dataset to try it out.
+""")
+
+st.markdown("[Download Sample Data](/hlist_0.13835.csv)", unsafe_allow_html=True)
+
 st.write("Upload your CSV file to make predictions and visualize results.")
 
 # File uploader for CSV files
