@@ -16,7 +16,7 @@ API_URL = "https://dark-matter-halo-concentration.onrender.com/"  # Update this 
 page_bg_img = '''
 <style>
 .stApp {
-    background-image: url("https://github.com/Rishavdovakiin/DM-Regression/blob/main/img.webp");
+    background-image: url("https://github.com/Rishavdovakiin/DM-Regression/blob/main/img.png");
     background-size: cover;
     background-position: center;
 }
