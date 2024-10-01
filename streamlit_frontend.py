@@ -50,11 +50,27 @@ st.title("Dark Matter Halo Concentration Prediction")
 with st.container():
     st.markdown("""
         <div class="description-container">
-        <h2>Welcome to the Dark Matter Halo Concentration Predictor</h2>
+        <h2>Dark Matter Halo</h2>
         <p>
-            This app allows you to predict dark matter halo concentrations using advanced machine learning models. 
-            Simply upload a CSV file containing the relevant data, and the model will process it to generate predictions. 
-            You can also download a sample dataset to try out the functionality.
+            A <strong>Dark Matter Halo</strong> is an invisible, gravitationally dominant region surrounding galaxies and galaxy clusters. 
+            It contains dark matter, a substance that doesn't emit or interact with electromagnetic radiation, making it undetectable through conventional observational means. 
+            Despite its elusiveness, dark matter plays a crucial role in the formation, structure, and evolution of galaxies by influencing their rotation and the movement of visible matter.
+        </p>
+        <h2>About the App</h2>
+        <p>
+            This app is designed to undertake <strong>regression analysis</strong> on dark matter halos using data from the 
+            <a href="https://www.slac.stanford.edu/~behroozi/Bolshoi_Catalogs/" target="_blank" style="color: lightblue;">Bolshoi Simulation Catalogue</a>, 
+            one of the most detailed cosmological simulations of dark matter structures. By uploading a CSV file with the appropriate features, users can:
+        </p>
+
+        <ul>
+            <li>Predict <strong>dark matter halo concentration</strong>.</li>
+            <li>Leverage advanced machine learning models for more accurate predictions.</li>
+            <li>Visualize predictions against actual values, allowing researchers to evaluate the model's performance.</li>
+        </ul>
+        <p>
+            This tool is particularly useful for astrophysicists and researchers analyzing large-scale simulations, 
+            helping streamline the process of understanding dark matter halo properties.
         </p>
         </div>
     """, unsafe_allow_html=True)
