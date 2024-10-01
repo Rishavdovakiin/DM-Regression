@@ -69,8 +69,8 @@ with st.container():
             <li>Visualize predictions against actual values, allowing researchers to evaluate the model's performance.</li>
         </ul>
         <p>
-            This tool is particularly useful for astrophysicists and researchers analyzing large-scale simulations, 
-            helping streamline the process of understanding dark matter halo properties.
+            This tool is especially beneficial for early-career researchers examining large-scale datasets from the Bolshoi Simulation Catalogue,
+            facilitating a more efficient analysis of dark matter halo properties and enhancing their understanding of this crucial aspect of cosmology.
         </p>
         </div>
     """, unsafe_allow_html=True)
