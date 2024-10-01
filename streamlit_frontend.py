@@ -12,6 +12,18 @@ from io import StringIO
 # Set the FastAPI backend URL
 API_URL = "https://dark-matter-halo-concentration.onrender.com/"  # Update this if running on a different host/port
 
+# Add custom CSS for the gray background in the description container
+st.markdown("""
+    <style>
+    .description-container {
+        background-color: #f0f0f0;  /* Light gray shade */
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 # Add custom CSS to set a galaxy background image (you can replace the URL with your own image)
 page_bg_img = '''
 <style>
@@ -26,11 +38,25 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # Title of the app
 st.title("Dark Matter Halo Concentration Prediction")
-st.write("""
-This app allows you to predict dark matter halo concentrations using advanced machine learning models. 
-Simply upload a CSV file containing the relevant data, and the model will process it to generate predictions. 
-You can also download a sample dataset to try it out.
-""")
+
+#st.write("""
+#This app allows you to predict dark matter halo concentrations using advanced machine learning models. 
+#Simply upload a CSV file containing the relevant data, and the model will process it to generate predictions. 
+#You can also download a sample dataset to try it out.
+#""")
+
+# Description container for better readability with gray background
+with st.container():
+    st.markdown("""
+        <div class="description-container">
+        <h2>Welcome to the Dark Matter Halo Concentration Predictor</h2>
+        <p>
+            This app allows you to predict dark matter halo concentrations using advanced machine learning models. 
+            Simply upload a CSV file containing the relevant data, and the model will process it to generate predictions. 
+            You can also download a sample dataset to try out the functionality.
+        </p>
+        </div>
+    """, unsafe_allow_html=True)
 
 #st.markdown("[Download Sample Data](https://raw.githubusercontent.com/Rishavdovakiin/DM-Regression/refs/heads/main/hlist_0.13835.csv)", unsafe_allow_html=True)
 
