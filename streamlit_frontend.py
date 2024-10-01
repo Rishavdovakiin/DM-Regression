@@ -16,7 +16,7 @@ API_URL = "https://dark-matter-halo-concentration.onrender.com/"  # Update this 
 st.markdown("""
     <style>
     .description-container {
-        background-color: #f0f0f0;  /* Light gray shade */
+        background-color: #f0f0f0;  /* gray shade */
         padding: 15px;
         border-radius: 10px;
         margin-bottom: 20px;
