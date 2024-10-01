@@ -32,7 +32,26 @@ Simply upload a CSV file containing the relevant data, and the model will proces
 You can also download a sample dataset to try it out.
 """)
 
-st.markdown("[Download Sample Data](https://raw.githubusercontent.com/Rishavdovakiin/DM-Regression/refs/heads/main/hlist_0.13835.csv)", unsafe_allow_html=True)
+#st.markdown("[Download Sample Data](https://raw.githubusercontent.com/Rishavdovakiin/DM-Regression/refs/heads/main/hlist_0.13835.csv)", unsafe_allow_html=True)
+
+
+# Provide a button to download the sample data directly from GitHub
+sample_data_url = "https://raw.githubusercontent.com/Rishavdovakiin/DM-Regression/refs/heads/main/hlist_0.13835.csv"
+
+try:
+    response = requests.get(sample_data_url)
+    response.raise_for_status()  # Check if the request was successful
+    sample_data = response.content  # Get the content of the file
+
+    # Provide a download button for the sample data
+    st.download_button(
+        label="Download Sample Data",
+        data=sample_data,
+        file_name="sample_data.csv",
+        mime="text/csv"
+    )
+except requests.exceptions.RequestException as e:
+    st.error(f"Failed to download sample data: {e}")
 
 st.write("Upload your CSV file to make predictions and visualize results.")
 
