@@ -49,7 +49,7 @@ st.title("Dark Matter Halo Concentration Prediction")
 # Description container for better readability with gray background
 with st.container():
     st.markdown("""
-        <div class="description-container">
+        <div class="description-container" style="background-color: rgba(50, 50, 50, 0.8); padding: 20px; border-radius: 10px;">
         <h2>Dark Matter Halo</h2>
         <p>
             A <strong>Dark Matter Halo</strong> is an invisible, gravitationally dominant region surrounding galaxies and galaxy clusters. 
