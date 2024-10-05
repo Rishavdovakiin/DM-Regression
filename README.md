@@ -23,6 +23,30 @@ This repository contains the results and code from my research internship, focus
 - **API Usage**: Simple instructions to use the pre-trained models via the API for your own dark matter simulation datasets.
 
 - **Streamlit Web App**: A user-friendly interface for accessing the model predictions and visualizing results in real-time.
+  
+## Tech Stack
+
+- **Frontend**: 
+  - Streamlit for user interface.
+  - Custom CSS and background for an improved user experience.
+  
+- **Backend**: 
+  - FastAPI to handle model predictions and data processing.
+  
+- **Machine Learning Models**:
+  - XGBoost, CatBoost, AdaBoost, etc.
+
+- **Data**: 
+  - Cosmological datasets from the [Bolshoi Simulation Catalogue](https://www.slac.stanford.edu/~behroozi/Bolshoi_Catalogs/).
+
+## Setup
+### Backend Setup (FastAPI)
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Rishavdovakiin/DM-Regression.git
+   cd DM-Regression
+   ```
 
 ## Future Work:
 Researchers working with the Bolshoi simulation or similar dark matter halo datasets can use this repository to:
