@@ -9,11 +9,11 @@ The machine learning model runs on a FastAPI backend, and this frontend interact
 
 
 ### Features
-- Predict dark matter halo concentration: Upload a CSV file with the required features, and the app will provide predictions.
-- Advanced machine learning models: The app uses regression models trained on data from the Bolshoi Simulation Catalogue.
-- Visualization: Compare predictions against actual values using plots.
-- Sample data: Download a sample dataset to test the functionality.
-- User-friendly interface: The app features an intuitive design, with helpful descriptions and easy-to-follow steps.
+- **Predict dark matter halo concentration**: Upload a CSV file with the required features, and the app will provide predictions.
+- **Advanced machine learning models**: The app uses regression models trained on data from the Bolshoi Simulation Catalogue.
+- **Visualization**: Compare predictions against actual values using plots.
+- **Sample data**: Download a sample dataset to test the functionality.
+- **User-friendly interface**: The app features an intuitive design, with helpful descriptions and easy-to-follow steps.
 ### How to Use the App
 - Run the App
 Install Streamlit by running:
@@ -41,9 +41,9 @@ Once the app is running, you can follow these steps:
 ### Required Libraries
 Make sure the following libraries are installed:
 
-- Streamlit: For building the frontend of the app.
-- Requests: For sending and receiving data from the FastAPI backend.
-- Pandas: For handling CSV file operations.
+- **Streamlit**: For building the frontend of the app.
+- **Requests**: For sending and receiving data from the FastAPI backend.
+- **Pandas**: For handling CSV file operations.
 
 Install them via pip:
 
@@ -60,15 +60,15 @@ https://dark-matter-halo-concentration.onrender.com/
 Ensure that the FastAPI backend is running properly and replace the ```API_URL``` in the ```streamlit_frontend.py``` file if you deploy it on a different host.
 
 ### Backend API Endpoints
-- /predict/: Accepts a CSV file and returns predictions along with RMSE score.
-- /download_csv: Endpoint to download the CSV file containing the predicted results.
-- /download_plot: Endpoint to fetch the prediction vs. labels plot.
+- **/predict/**: Accepts a CSV file and returns predictions along with RMSE score.
+- **/download_csv**: Endpoint to download the CSV file containing the predicted results.
+- **/download_plot**: Endpoint to fetch the prediction vs. labels plot.
 
 ### Customization
 You can customize the app as follows:
 
-- Background Image: The app currently uses a galaxy-themed background. You can replace the image URL in the ```page_bg_img``` variable with another image of your choice.
-- Prediction Models: Update the FastAPI backend with your preferred machine learning models for better accuracy or different approaches to regression analysis.
+- **Background Image**: The app currently uses a galaxy-themed background. You can replace the image URL in the ```page_bg_img``` variable with another image of your choice.
+- **Prediction Models**: Update the FastAPI backend with your preferred machine learning models for better accuracy or different approaches to regression analysis.
 
 ### Known Issues
 - If the API or the CSV file format isn't correct, the app will display an error message.
