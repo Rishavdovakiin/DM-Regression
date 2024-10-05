@@ -32,6 +32,8 @@ Researchers working with the Bolshoi simulation or similar dark matter halo data
 - Use the Streamlit app for quick testing of different halo property datasets.
 
 ## Acknowledgements
+- **Original Work**: Our work is inspired from the repository: ```bash https://github.com/abhmalik/halo_conc-regression-ML/tree/master ```
+                    We applied different models and aimed to create an app for future use.
 - **Bolshoi Simulation Catalogue**: The cosmological data used in this project is sourced from the Bolshoi Simulation Catalogue.
                                   The link to the catalogue: 
                                   ```arduino
