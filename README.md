@@ -32,13 +32,13 @@ Researchers working with the Bolshoi simulation or similar dark matter halo data
 - Use the Streamlit app for quick testing of different halo property datasets.
 
 ## Acknowledgements
-**Bolshoi Simulation Catalogue**: The cosmological data used in this project is sourced from the Bolshoi Simulation Catalogue.
+- **Bolshoi Simulation Catalogue**: The cosmological data used in this project is sourced from the Bolshoi Simulation Catalogue.
                                   The link to the catalogue: 
                                   ```arduino
                                   https://www.slac.stanford.edu/~behroozi/Bolshoi_Catalogs/
                                   ```
-**Streamlit**: For building the app frontend.
-**FastAPI**: For the backend API used to handle model predictions.
+- **Streamlit**: For building the app frontend.
+- **FastAPI**: For the backend API used to handle model predictions.
 
 ## Getting Started:
 To get started with using the models, the API, or the Streamlit app, refer to the respective documentation in the repository for detailed instructions.
