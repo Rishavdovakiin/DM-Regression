@@ -1,5 +1,9 @@
 ## Dark Matter Halo Prediction Using Machine Learning Models
-This repository contains the results and code from my research internship, focused on predicting dark matter halo concentration using various advanced Machine Learning (ML) models, including Linear regression, Forest, XGBoost, and CatBoost. The models were trained and evaluated on the Bolshoi simulation dataset, a large cosmological simulation widely used in astrophysical research. This project aims to compare the performance of different ML techniques in predicting dark matter halo properties and make these trained models easily accessible for future research.
+This repository contains the results and code from my research internship, focused on predicting dark matter halo concentration using various advanced Machine Learning (ML) models, including Linear Regression, Forest, XGBoost, and CatBoost. The models were trained and evaluated on the Bolshoi simulation dataset, a large cosmological simulation widely used in astrophysical research. This project aims to compare the performance of different ML techniques in predicting dark matter halo properties and make these trained models easily accessible for future research.
+
+Additionally, I have built a web-based app using **Streamlit** (frontend) and **FastAPI** (backend) to allow users to easily upload their datasets and generate predictions for dark matter halo concentration using the trained ML models. This app makes the process user-friendly and provides tools to visualize model performance, download results, and convert raw simulation data into CSV format.
+
+You can access the Web-App here [Dark Matter Halo Concentration Prediction](https://dark-matter-concentration-prediction.streamlit.app/).
 
 ## Key Features:
 - **Model Implementation**: Code for training multiple ML models (AdaBoost, XGBoost, CatBoost) for predicting dark matter halo concentration.
