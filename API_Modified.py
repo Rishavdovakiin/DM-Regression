@@ -111,9 +111,6 @@ except Exception as e:
 #except Exception as e:
 #    raise RuntimeError(f"Error loading models: {e}")
 
-
-
-
 # Expected columns in the dataset
 expected_columns = [
     'Virial Mass', 'Virial Radius', 'Velocity Disp', 'Vmax', 'Spin',
