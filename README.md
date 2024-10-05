@@ -47,6 +47,41 @@ This repository contains the results and code from my research internship, focus
    git clone https://github.com/Rishavdovakiin/DM-Regression.git
    cd DM-Regression
    ```
+2. Create and activate a virtual environment:
+   ```bash
+   python3 -m venv env
+   source env/bin/activate  # On Windows, use `env\Scripts\activate`
+   ```
+3. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Run the FastAPI backend:
+   ```bash
+   uvicorn api:app --reload
+   ```
+   The backend should now be running on `http://127.0.0.1:8000`.
+
+### Frontend Setup (Streamlit)
+1. Navigate to the project folder:
+   ```bash
+   cd DM-Regression
+   ```
+2. Install Streamlit if you haven’t already:
+   ```bash
+   pip install streamlit
+   ```
+3. Run the Streamlit app:
+   ```bash
+   streamlit run streamlit_frontend.py
+   ```
+   The app will open in your web browser.
+
+## Convert Raw Data to CSV
+To convert raw data from the Bolshoi Simulation Catalogue into a well-structured CSV format, use the `Convert_to_CSV.py` script. This will preprocess the raw data and save it into CSV format with appropriate columns.
+```bash
+python Convert_to_CSV.py
+```
 
 ## Future Work:
 Researchers working with the Bolshoi simulation or similar dark matter halo datasets can use this repository to:
