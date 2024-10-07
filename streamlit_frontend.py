@@ -3,6 +3,8 @@
 # Date: 9th September, 2024
 # Streamlit frontend for interacting with the FastAPI model prediction API.
 #https://c4.wallpaperflare.com/wallpaper/681/554/339/abstract-planet-space-purple-wallpaper-preview.jpg
+#https://w0.peakpx.com/wallpaper/363/186/HD-wallpaper-eclipse-black-destiny-hole-hunter-inferno-nebula-planet-solar-unknown.jpg
+#https://c4.wallpaperflare.com/wallpaper/681/554/339/abstract-planet-space-purple-wallpaper-preview.jpg
 
 import streamlit as st
 import requests
@@ -29,7 +31,7 @@ st.markdown("""
 page_bg_img = '''
 <style>
 .stApp {
-    background-image: url("https://c4.wallpaperflare.com/wallpaper/681/554/339/abstract-planet-space-purple-wallpaper-preview.jpg");
+    background-image: url("https://w0.peakpx.com/wallpaper/363/186/HD-wallpaper-eclipse-black-destiny-hole-hunter-inferno-nebula-planet-solar-unknown.jpg");
     background-size: cover;
     background-position: center;
 }
