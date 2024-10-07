@@ -1,5 +1,9 @@
 ## Dark Matter Halo Prediction Using Machine Learning Models
-This repository contains the results and code from my research internship, focused on predicting dark matter halo concentration using various advanced Machine Learning (ML) models, including Linear regression, Forest, XGBoost, and CatBoost. The models were trained and evaluated on the Bolshoi simulation dataset, a large cosmological simulation widely used in astrophysical research. This project aims to compare the performance of different ML techniques in predicting dark matter halo properties and make these trained models easily accessible for future research.
+This repository contains the results and code from my research internship, focused on predicting dark matter halo concentration using various advanced Machine Learning (ML) models, including Linear Regression, Forest, XGBoost, and CatBoost. The models were trained and evaluated on the Bolshoi simulation dataset, a large cosmological simulation widely used in astrophysical research. This project aims to compare the performance of different ML techniques in predicting dark matter halo properties and make these trained models easily accessible for future research.
+
+Additionally, I have built a web-based app using **Streamlit** (frontend) and **FastAPI** (backend) to allow users to easily upload their datasets and generate predictions for dark matter halo concentration using the trained ML models. This app makes the process user-friendly and provides tools to visualize model performance, download results, and convert raw simulation data into CSV format.
+
+You can access the Web-App here [Dark Matter Halo Concentration Prediction](https://dark-matter-concentration-prediction.streamlit.app/).
 
 ## Key Features:
 - **Model Implementation**: Code for training multiple ML models (AdaBoost, XGBoost, CatBoost) for predicting dark matter halo concentration.
@@ -23,6 +27,65 @@ This repository contains the results and code from my research internship, focus
 - **API Usage**: Simple instructions to use the pre-trained models via the API for your own dark matter simulation datasets.
 
 - **Streamlit Web App**: A user-friendly interface for accessing the model predictions and visualizing results in real-time.
+  
+## Tech Stack
+
+- **Frontend**: 
+  - Streamlit for user interface.
+  - Custom CSS and background for an improved user experience.
+  
+- **Backend**: 
+  - FastAPI to handle model predictions and data processing.
+  
+- **Machine Learning Models**:
+  - XGBoost, CatBoost, AdaBoost, etc.
+
+- **Data**: 
+  - Cosmological datasets from the [Bolshoi Simulation Catalogue](https://www.slac.stanford.edu/~behroozi/Bolshoi_Catalogs/).
+
+## Setup
+### Backend Setup (FastAPI)
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Rishavdovakiin/DM-Regression.git
+   cd DM-Regression
+   ```
+2. Create and activate a virtual environment:
+   ```bash
+   python3 -m venv env
+   source env/bin/activate  # On Windows, use `env\Scripts\activate`
+   ```
+3. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Run the FastAPI backend:
+   ```bash
+   uvicorn api:app --reload
+   ```
+   The backend should now be running on `http://127.0.0.1:8000`.
+
+### Frontend Setup (Streamlit)
+1. Navigate to the project folder:
+   ```bash
+   cd DM-Regression
+   ```
+2. Install Streamlit if you haven’t already:
+   ```bash
+   pip install streamlit
+   ```
+3. Run the Streamlit app:
+   ```bash
+   streamlit run streamlit_frontend.py
+   ```
+   The app will open in your web browser.
+
+## Convert Raw Data to CSV
+To convert raw data from the Bolshoi Simulation Catalogue into a well-structured CSV format, use the `Convert_to_CSV.py` script. This will preprocess the raw data and save it into CSV format with appropriate columns.
+```bash
+python Convert_to_CSV.py
+```
 
 ## Future Work:
 Researchers working with the Bolshoi simulation or similar dark matter halo datasets can use this repository to:
